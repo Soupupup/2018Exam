@@ -1,0 +1,5 @@
+Without implementing numpy, as seen in "perf_plot.png", the time increases expotentially as the the number of iteration steps completed (number of nodes generated) increases.
+
+With the numpy implementation, the time taken also has an expotentially growth but with a significiantly smaller rate of increase in gradient than the non-numpy version. (harder to tell with a large time axis with both graphs, if looking at the numpy-verison separately, it's easier to tell that it also grows expotentially). 
+
+Additionally, note that at first, before and including the 7 iteration steps, the no-numpy version is actually faster than the numpy-version. Only after 7 interation steps, the time taken of the no-numpy version grows expotentially at a larger rate then the numpy-version (non-numpy slower by a factor of around 6 at 10 iterations than numpy)

@@ -1,0 +1,67 @@
+#two-shelf system
+two_shelf:
+  upper:
+    - A
+    - antiA
+    - B
+    - C
+    - D
+    - E
+    - A
+
+  lower:
+    - antiA
+    - antiC
+    - antiC
+    - antiB
+    - B
+    - A
+
+# the expected states of the two shelves after the first reaction
+lower_react:
+  - antiC
+  - antiC
+  - antiB
+  - B
+  - A
+
+# the two possible outcomes for the uppershelf
+upper_react1: 
+  - A
+  - antiA
+  - B
+  - C
+  - D
+  - E
+
+upper_react2:
+  - antiA
+  - B
+  - C
+  - D
+  - E
+  - A
+
+# the expected states of the shelves after running a full experiment
+lower_final:
+  - antiC
+  - B
+
+# the two possible outcomes for the uppershelf
+upper_final1:
+  - A
+  - D
+  - E
+
+upper_final2:
+  - D
+  - E
+  - A
+
+
+
+# the expected number of reactions after a full experiments
+totalcount:
+  - 4
+
+
